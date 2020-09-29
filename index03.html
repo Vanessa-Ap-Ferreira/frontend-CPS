@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Técnico em Desenvolvimento de Sistemas - Novotec</title>
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+        <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Fechar &times;</button>
+        <a href="#sobre" class="w3-bar-item w3-button">Sobre</a>
+        <a href="#disciplinas" class="w3-bar-item w3-button">Disciplinas</a>
+        <a href="#contato" class="w3-bar-item w3-button">Contato</a>
+    </div>
+    <div class="w3-teal">
+        <button class="w3-button w3-teal w3-large w3-left" onclick="openLeftMenu()">&#9776;</button>
+        <a href="#home" class="w3-bar-item w3-button w3-large">Desenvolvimento de Sistemas</a>
+    </div>
+    <script>
+        function openLeftMenu() {
+            document.getElementById("leftMenu").style.display = "block";
+        }
+
+        function closeLeftMenu() {
+            document.getElementById("leftMenu").style.display = "none";
+        }
+      </script>
+</body>
+</html>
